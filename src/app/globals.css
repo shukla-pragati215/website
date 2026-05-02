@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #050505;
+  --color-background: #0A0A0A;
   --color-foreground: #ffffff;
+  --color-brand-gold: #D4AF37;
+  --color-brand-amber: #D97706;
+  --color-brand-dark: #070B13;
   
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -11,7 +14,22 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    @apply antialiased selection:bg-cyan-500/30 selection:text-cyan-200;
+    @apply antialiased selection:bg-amber-500/30 selection:text-amber-200;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0A0A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.2);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(212, 175, 55, 0.4);
   }
 }
 
@@ -23,9 +41,35 @@
     @apply bg-[#0f0f0f]/50 backdrop-blur-lg border border-white/5 shadow-2xl;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-amber-200 to-amber-500;
   }
-  .glow-cyan {
-    @apply shadow-[0_0_30px_rgba(0,255,255,0.3)];
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-600;
   }
+  .glow-gold {
+    @apply shadow-[0_0_30px_rgba(212,175,55,0.3)];
+  }
+}
+
+/* Noise texture background */
+.noise-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Animated gradient border */
+@keyframes border-rotate {
+  0% { --angle: 0deg; }
+  100% { --angle: 360deg; }
+}
+
+/* Smooth section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,175,55,0.15), transparent);
 }

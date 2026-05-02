@@ -101,10 +101,10 @@ const StickyCanvas: React.FC<StickyCanvasProps> = ({ frameCount, children }) => 
           />
           {children}
           {!isLoaded && (
-            <div className="absolute inset-0 flex items-center justify-center bg-[#050505]">
+            <div className="absolute inset-0 flex items-center justify-center bg-[#0A0A0A]">
               <div className="flex flex-col items-center gap-4">
-                <div className="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-500 rounded-full animate-spin" />
-                <p className="text-cyan-500 font-medium tracking-widest text-xs uppercase">
+                <div className="w-12 h-12 border-4 border-amber-500/30 border-t-amber-500 rounded-full animate-spin" />
+                <p className="text-amber-500 font-medium tracking-widest text-xs uppercase">
                   Initializing Magic...
                 </p>
               </div>

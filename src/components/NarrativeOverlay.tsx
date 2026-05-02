@@ -36,8 +36,8 @@ const NarrativeOverlay: React.FC = () => {
         style={{ opacity: opacity1, scale: scale1 }}
         className="flex flex-col items-center text-center max-w-4xl"
       >
-        <h1 className="text-7xl md:text-9xl font-black tracking-tighter text-white drop-shadow-[0_0_30px_rgba(0,214,255,0.3)]">
-          Enlightened <span className="text-cyan-400">Magic.</span>
+        <h1 className="text-7xl md:text-9xl font-black tracking-tighter text-white drop-shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+          Enlightened <span className="text-amber-400">Magic.</span>
         </h1>
         <p className="mt-6 text-xl md:text-2xl text-gray-400 font-light tracking-[0.2em] uppercase">
           Transforming brands into growth machines.
@@ -50,7 +50,7 @@ const NarrativeOverlay: React.FC = () => {
         style={{ opacity: opacity2, filter: `blur(${blur2}px)` }}
         className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
       >
-        <span className="text-cyan-500 font-bold uppercase tracking-[0.5em] text-sm mb-8">
+        <span className="text-amber-500 font-bold uppercase tracking-[0.5em] text-sm mb-8">
           Our Services //
         </span>
         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-12">
@@ -72,7 +72,7 @@ const NarrativeOverlay: React.FC = () => {
               transition={{ delay: i * 0.1 }}
               className="flex items-center gap-4 group"
             >
-              <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 shadow-[0_0_10px_rgba(6,182,212,0.5)]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_10px_rgba(212,175,55,0.5)]" />
               <span className="text-xl md:text-2xl text-gray-400 group-hover:text-white transition-colors duration-500 font-light tracking-tight">
                 {service}
               </span>
@@ -87,11 +87,11 @@ const NarrativeOverlay: React.FC = () => {
         style={{ opacity: opacity3 }}
         className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
       >
-        <span className="text-cyan-500 font-bold uppercase tracking-[0.5em] text-sm mb-8">
+        <span className="text-amber-500 font-bold uppercase tracking-[0.5em] text-sm mb-8">
           The Mission //
         </span>
         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 max-w-4xl">
-          Bridging Artistry <br />& <span className="text-gradient">Intelligence</span>
+          Bridging Artistry <br />&amp; <span className="text-gradient">Intelligence</span>
         </h2>
         <p className="text-lg md:text-xl text-gray-400 max-w-3xl leading-relaxed font-light">
           We are a luxury tech collective dedicated to turning brands into growth machines. 
@@ -105,11 +105,11 @@ const NarrativeOverlay: React.FC = () => {
         style={{ opacity: opacity4 }}
         className="flex flex-col items-center text-center max-w-2xl"
       >
-        <span className="text-cyan-500/60 font-bold uppercase tracking-widest text-xs mb-8">
+        <span className="text-amber-500/60 font-bold uppercase tracking-widest text-xs mb-8">
           The Foundation //
         </span>
         <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          Privacy & Trust
+          Privacy &amp; Trust
         </h3>
         <p className="text-lg md:text-xl text-gray-400 leading-relaxed font-light">
           Your data is your legacy. We protect it with enterprise-grade security 
@@ -129,7 +129,7 @@ const NarrativeOverlay: React.FC = () => {
           Hear everything. Feel nothing else. <br />
           <span className="text-white">Let&apos;s build your machine.</span>
         </p>
-        <div className="flex flex-col gap-2 mb-10 text-cyan-400 font-bold tracking-tight text-lg">
+        <div className="flex flex-col gap-2 mb-10 text-amber-400 font-bold tracking-tight text-lg">
           <a href="mailto:support@enlightenedmagic.com" className="hover:text-white transition-colors">support@enlightenedmagic.com</a>
           <a href="tel:+919769216919" className="hover:text-white transition-colors">+91 97692 16919</a>
         </div>
@@ -140,12 +140,12 @@ const NarrativeOverlay: React.FC = () => {
           rel="noopener noreferrer"
           className="pointer-events-auto group relative px-12 py-6 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95 inline-block"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-700 animate-pulse" />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
           <span className="relative text-white font-bold text-xl tracking-wider uppercase">
             Start Your Transformation
           </span>
-          <div className="absolute -inset-1 bg-cyan-400 blur-2xl opacity-0 group-hover:opacity-40 transition-opacity" />
+          <div className="absolute -inset-1 bg-amber-400 blur-2xl opacity-0 group-hover:opacity-40 transition-opacity" />
         </a>
       </motion.div>
     </div>
